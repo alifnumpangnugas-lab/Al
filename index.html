@@ -1,0 +1,1342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <base target="_self">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PT Berkah Baja Steel - Toko Material, Distributor & Kontraktor</title>
+    <meta name="description" content="PT Berkah Baja Steel menyediakan material konstruksi berkualitas tinggi, distribusi material bangunan, dan jasa kontraktor profesional untuk proyek Anda">
+    <meta name="keywords" content="toko material, distributor baja, kontraktor, material bangunan, konstruksi, steel, besi beton, semen, cat, alat konstruksi">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bajarimary: "#1e40af",
+                        secondary: "#dc2626",
+                        accent: "#f59e0b",
+                        dark: "#1f2937",
+                        light: "#f9fafb"
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'system-ui', 'sans-serif'],
+                        'heading': ['Montserrat', 'system-ui', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, #1e40af 0%, #2563eb 50%, #3b82f6 100%);
+        }
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        .nav-link {
+            position: relative;
+        }
+        .nav-link::after {
+            content: "";
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: #dc2626;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-gray-50 font-sans text-gray-800">
+    <!-- Cookie Consent -->
+    <div id="cookieConsent" class="fixed bottom-0 left-0 right-0 bg-dark text-white p-4 z-50 hidden">
+        <div class="container mx-auto flex flex-col md:flex-row items-center justify-between">
+            <p class="mb-4 md:mb-0 md:mr-4">Kami menggunakan cookies untuk meningkatkan pengalaman Anda. Dengan melanjutkan, Anda menyetujui penggunaan cookies kami.</p>
+            <div class="flex space-x-2">
+                <button onclick="acceptCookies()" class="bg-primary hover:bg-blue-700 text-white px-4 py-2 rounded transition">Setuju</button>
+                <button onclick="declineCookies()" class="bg-gray-600 hover:bg-gray-700 text-white px-4 py-2 rounded transition">Tolak</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header & Navigation -->
+    <header class="sticky top-0 z-40 bg-white shadow-md">
+        <div class="container mx-auto px-4">
+            <!-- Top Bar -->
+            <div class="hidden md:flex items-center justify-between py-2 border-b">
+                <div class="flex items-center space-x-4">
+                    <div class="flex items-center">
+                        <i class="fas fa-phone-alt text-primary mr-2"></i>
+                        <span class="text-sm">+62 21 1234 5678</span>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fas fa-envelope text-primary mr-2"></i>
+                        <span class="text-sm">info@berkahbajasteel.co.id</span>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="#" class="text-sm hover:text-primary transition">FAQ</a>
+                    <a href="#" class="text-sm hover:text-primary transition">Track Order</a>
+                    <div class="flex items-center space-x-2">
+                        <a href="#" class="text-sm hover:text-primary transition"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-sm hover:text-primary transition"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-sm hover:text-primary transition"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-sm hover:text-primary transition"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Navigation -->
+            <nav class="flex items-center justify-between py-4">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mr-3">
+                        <span class="text-white font-heading font-bold text-xl">BBS</span>
+                    </div>
+                    <div>
+                        <h1 class="font-heading font-bold text-xl text-dark">PT Berkah Baja Steel</h1>
+                        <p class="text-sm text-gray-600">Material • Distributor • Kontraktor</p>
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden lg:flex items-center space-x-8">
+                    <a href="#home" class="nav-link font-medium text-dark hover:text-primary transition">Beranda</a>
+                    <a href="#products" class="nav-link font-medium text-dark hover:text-primary transition">Produk</a>
+                    <a href="#distributor" class="nav-link font-medium text-dark hover:text-primary transition">Distributor</a>
+                    <a href="#contractor" class="nav-link font-medium text-dark hover:text-primary transition">Kontraktor</a>
+                    <a href="#about" class="nav-link font-medium text-dark hover:text-primary transition">Tentang Kami</a>
+                    <a href="#contact" class="nav-link font-medium text-dark hover:text-primary transition">Kontak</a>
+                </div>
+
+                <!-- CTA Buttons -->
+                <div class="hidden lg:flex items-center space-x-4">
+                    <button onclick="openQuoteModal()" class="bg-primary hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-medium transition">
+                        <i class="fas fa-file-invoice-dollar mr-2"></i>Request Quote
+                    </button>
+                    <button onclick="openCart()" class="relative">
+                        <i class="fas fa-shopping-cart text-2xl text-dark hover:text-primary transition"></i>
+                        <span id="cartCount" class="absolute -top-2 -right-2 bg-secondary text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">0</span>
+                    </button>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobileMenuButton" class="lg:hidden text-2xl text-dark">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+
+            <!-- Mobile Navigation -->
+            <div id="mobileMenu" class="lg:hidden hidden bg-white border-t">
+                <div class="flex flex-col space-y-4 py-4">
+                    <a href="#home" class="font-medium text-dark hover:text-primary transition py-2 border-b">Beranda</a>
+                    <a href="#products" class="font-medium text-dark hover:text-primary transition py-2 border-b">Produk</a>
+                    <a href="#distributor" class="font-medium text-dark hover:text-primary transition py-2 border-b">Distributor</a>
+                    <a href="#contractor" class="font-medium text-dark hover:text-primary transition py-2 border-b">Kontraktor</a>
+                    <a href="#about" class="font-medium text-dark hover:text-primary transition py-2 border-b">Tentang Kami</a>
+                    <a href="#contact" class="font-medium text-dark hover:text-primary transition py-2 border-b">Kontak</a>
+                    <div class="pt-4">
+                        <button onclick="openQuoteModal()" class="w-full bg-primary hover:bg-blue-700 text-white px-4 py-3 rounded-lg font-medium transition mb-2">
+                            <i class="fas fa-file-invoice-dollar mr-2"></i>Request Quote
+                        </button>
+                        <button onclick="openCart()" class="w-full border border-primary text-primary px-4 py-3 rounded-lg font-medium transition">
+                            <i class="fas fa-shopping-cart mr-2"></i>Keranjang (<span id="mobileCartCount">0</span>)
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-gradient text-white">
+            <div class="container mx-auto px-4 py-16 md:py-24">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h2 class="font-heading font-bold text-4xl md:text-5xl mb-6">Solusi Lengkap Material Konstruksi & Jasa Kontraktor</h2>
+                        <p class="text-xl mb-8 opacity-90">PT Berkah Baja Steel menyediakan material konstruksi berkualitas tinggi, distribusi terpercaya, dan jasa kontraktor profesional untuk proyek Anda.</p>
+                        <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                            <button onclick="scrollToSection('products')" class="bg-white text-primary hover:bg-gray-100 font-bold px-6 py-3 rounded-lg text-lg transition">
+                                <i class="fas fa-shopping-basket mr-2"></i>Lihat Produk
+                            </button>
+                            <button onclick="openQuoteModal()" class="bg-secondary hover:bg-red-700 text-white font-bold px-6 py-3 rounded-lg text-lg transition">
+                                <i class="fas fa-calendar-check mr-2"></i>Konsultasi Proyek
+                            </button>
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <img src="https://picsum.photos/600/400?random=1" alt="Construction materials and equipment" class="rounded-lg shadow-2xl" loading="lazy">
+                        <div class="absolute -bottom-6 -right-6 bg-white text-dark p-6 rounded-lg shadow-xl max-w-xs">
+                            <h3 class="font-heading font-bold text-xl mb-2">30+ Tahun Pengalaman</h3>
+                            <p class="text-gray-600">Melayani proyek konstruksi di seluruh Indonesia dengan standar kualitas terbaik.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Section -->
+        <section id="products" class="py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h2 class="font-heading font-bold text-3xl md:text-4xl text-dark mb-4">Produk Material Konstruksi</h2>
+                    <p class="text-gray-600 max-w-2xl mx-auto">Kami menyediakan berbagai material konstruksi berkualitas untuk kebutuhan proyek Anda</p>
+                </div>
+
+               <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+    
+    <a href="menu.html" class="block bg-light p-6 rounded-lg card-hover">
+        <div class="w-16 h-16 bg-primary rounded-lg flex items-center justify-center mb-4">
+            <i class="fas fa-cubes text-white text-2xl"></i>
+        </div>
+        <h3 class="font-heading font-bold text-xl mb-2">Baja & Besi</h3>
+        <p class="text-gray-600">Besi beton, baja ringan, plat baja, hollow, dan produk baja lainnya.</p>
+    </a>
+
+    <a href="semen-cat.html" class="block bg-light p-6 rounded-lg card-hover">
+        <div class="w-16 h-16 bg-accent rounded-lg flex items-center justify-center mb-4">
+            <i class="fas fa-tint text-white text-2xl"></i>
+        </div>
+        <h3 class="font-heading font-bold text-xl mb-2">Semen & Cat</h3>
+        <p class="text-gray-600">Semen berbagai merk, cat tembok, cat besi, dan bahan finishing.</p>
+    </a>
+
+    <a href="alat-konstruksi.html" class="block bg-light p-6 rounded-lg card-hover">
+        <div class="w-16 h-16 bg-secondary rounded-lg flex items-center justify-center mb-4">
+            <i class="fas fa-tools text-white text-2xl"></i>
+        </div>
+        <h3 class="font-heading font-bold text-xl mb-2">Alat Konstruksi</h3>
+        <p class="text-gray-600">Perkakas, alat berat, scaffolding, dan peralatan konstruksi lainnya.</p>
+    </a>
+
+    <a href="material-lainnya.html" class="block bg-light p-6 rounded-lg card-hover">
+        <div class="w-16 h-16 bg-primary rounded-lg flex items-center justify-center mb-4">
+            <i class="fas fa-boxes text-white text-2xl"></i>
+        </div>
+        <h3 class="font-heading font-bold text-xl mb-2">Material Lainnya</h3>
+        <p class="text-gray-600">Kaca, keramik, pipa, kabel, dan material bangunan lainnya.</p>
+    </a>
+
+</div>
+
+                <!-- Featured Products -->
+                <div class="mb-12">
+                    <h3 class="font-heading font-bold text-2xl mb-6">Produk Unggulan</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <!-- Product items will be generated by JavaScript -->
+                    </div>
+                </div>
+
+                <!-- View All Products Button -->
+                <div class="text-center">
+                    <button onclick="viewAllProducts()" class="bg-primary hover:bg-blue-700 text-white font-bold px-8 py-3 rounded-lg text-lg transition">
+                        <i class="fas fa-eye mr-2"></i>Lihat Semua Produk
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Distributor Section -->
+        <section id="distributor" class="py-16 bg-light">
+            <div class="container mx-auto px-4">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h2 class="font-heading font-bold text-3xl md:text-4xl text-dark mb-6">Distributor Material Konstruksi</h2>
+                        <p class="text-gray-600 mb-6">Sebagai distributor resmi berbagai merek material konstruksi terkemuka, kami menjamin kualitas dan ketersediaan produk untuk proyek Anda.</p>
+                        
+                        <div class="space-y-4 mb-8">
+                            <div class="flex items-start">
+                                <i class="fas fa-check-circle text-primary mt-1 mr-3"></i>
+                                <div>
+                                    <h4 class="font-bold text-dark mb-1">Distributor Resmi</h4>
+                                    <p class="text-gray-600">Kerjasama dengan produsen terkemuka seperti Tiga Roda, Semen Gresik, dan Krakatau Steel</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-check-circle text-primary mt-1 mr-3"></i>
+                                <div>
+                                    <h4 class="font-bold text-dark mb-1">Stok Lengkap</h4>
+                                    <p class="text-gray-600">Gudang dengan kapasitas besar untuk memastikan ketersediaan produk</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-check-circle text-primary mt-1 mr-3"></i>
+                                <div>
+                                    <h4 class="font-bold text-dark mb-1">Harga Kompetitif</h4>
+                                    <p class="text-gray-600">Harga distributor dengan diskon khusus untuk proyek besar</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button onclick="openDistributorForm()" class="bg-primary hover:bg-blue-700 text-white font-bold px-6 py-3 rounded-lg transition">
+                            <i class="fas fa-handshake mr-2"></i>Menjadi Distributor
+                        </button>
+                    </div>
+                    <div>
+                        <img src="https://picsum.photos/600/400?random=2" alt="Warehouse and distribution center" class="rounded-lg shadow-lg" loading="lazy">
+                    </div>
+                </div>
+
+                <!-- Partner Brands -->
+                <div class="mt-16">
+                    <h3 class="font-heading font-bold text-2xl text-center mb-8">Brand Partner Kami</h3>
+                    <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8">
+                        <div class="bg-white p-6 rounded-lg shadow-sm flex items-center justify-center">
+                            <div class="text-center">
+                                <div class="text-3xl font-bold text-gray-800 mb-2">TR</div>
+                                <span class="text-sm text-gray-600">Tiga Roda</span>
+                            </div>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-sm flex items-center justify-center">
+                            <div class="text-center">
+                                <div class="text-3xl font-bold text-gray-800 mb-2">SG</div>
+                                <span class="text-sm text-gray-600">Semen Gresik</span>
+                            </div>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-sm flex items-center justify-center">
+                            <div class="text-center">
+                                <div class="text-3xl font-bold text-gray-800 mb-2">KS</div>
+                                <span class="text-sm text-gray-600">Krakatau Steel</span>
+                            </div>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-sm flex items-center justify-center">
+                            <div class="text-center">
+                                <div class="text-3xl font-bold text-gray-800 mb-2">NI</div>
+                                <span class="text-sm text-gray-600">Nippon Paint</span>
+                            </div>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-sm flex items-center justify-center">
+                            <div class="text-center">
+                                <div class="text-3xl font-bold text-gray-800 mb-2">DP</div>
+                                <span class="text-sm text-gray-600">Dulux Paint</span>
+                            </div>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-sm flex items-center justify-center">
+                            <div class="text-center">
+                                <div class="text-3xl font-bold text-gray-800 mb-2">SS</div>
+                                <span class="text-sm text-gray-600">Sika Indonesia</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contractor Services -->
+        <section id="contractor" class="py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h2 class="font-heading font-bold text-3xl md:text-4xl text-dark mb-4">Jasa Kontraktor Profesional</h2>
+                    <p class="text-gray-600 max-w-3xl mx-auto">Tim kontraktor berpengalaman kami siap membantu mewujudkan proyek konstruksi Anda dengan standar kualitas terbaik</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                    <div class="bg-light p-8 rounded-lg card-hover">
+                        <div class="w-20 h-20 bg-primary rounded-full flex items-center justify-center mb-6 mx-auto">
+                            <i class="fas fa-building text-white text-3xl"></i>
+                        </div>
+                        <h3 class="font-heading font-bold text-xl text-center mb-4">Konstruksi Gedung</h3>
+                        <p class="text-gray-600 text-center">Konstruksi gedung perkantoran, apartemen, hotel, dan bangunan komersial lainnya.</p>
+                    </div>
+                    <div class="bg-light p-8 rounded-lg card-hover">
+                        <div class="w-20 h-20 bg-secondary rounded-full flex items-center justify-center mb-6 mx-auto">
+                            <i class="fas fa-home text-white text-3xl"></i>
+                        </div>
+                        <h3 class="font-heading font-bold text-xl text-center mb-4">Konstruksi Perumahan</h3>
+                        <p class="text-gray-600 text-center">Pembangunan perumahan, renovasi rumah, dan pembangunan fasilitas pendukung.</p>
+                    </div>
+                    <div class="bg-light p-8 rounded-lg card-hover">
+                        <div class="w-20 h-20 bg-accent rounded-full flex items-center justify-center mb-6 mx-auto">
+                            <i class="fas fa-industry text-white text-3xl"></i>
+                        </div>
+                        <h3 class="font-heading font-bold text-xl text-center mb-4">Konstruksi Industri</h3>
+                        <p class="text-gray-600 text-center">Pembangunan pabrik, gudang, dan fasilitas industri dengan spesifikasi khusus.</p>
+                    </div>
+                </div>
+
+                <!-- Project Portfolio -->
+                <div class="mb-12">
+                    <h3 class="font-heading font-bold text-2xl mb-6">Proyek Terbaru</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div class="bg-white rounded-lg overflow-hidden shadow-md">
+                            <img src="https://picsum.photos/400/250?random=3" alt="Office building construction" class="w-full h-48 object-cover" loading="lazy">
+                            <div class="p-6">
+                                <h4 class="font-heading font-bold text-lg mb-2">Gedung Perkantoran CBD</h4>
+                                <p class="text-gray-600 mb-4">Konstruksi gedung perkantoran 15 lantai di Central Business District</p>
+                                <div class="flex justify-between text-sm text-gray-500">
+                                    <span><i class="fas fa-calendar-alt mr-1"></i>2023</span>
+                                    <span><i class="fas fa-map-marker-alt mr-1"></i>Cilegon</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-lg overflow-hidden shadow-md">
+                            <img src="https://picsum.photos/400/250?random=4" alt="Residential complex" class="w-full h-48 object-cover" loading="lazy">
+                            <div class="p-6">
+                                <h4 class="font-heading font-bold text-lg mb-2">Perumahan Taman Asri</h4>
+                                <p class="text-gray-600 mb-4">Pembangunan kompleks perumahan dengan 50 unit rumah type 36/72</p>
+                                <div class="flex justify-between text-sm text-gray-500">
+                                    <span><i class="fas fa-calendar-alt mr-1"></i>2023</span>
+                                    <span><i class="fas fa-map-marker-alt mr-1"></i>Bekasi</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-lg overflow-hidden shadow-md">
+                            <img src="https://picsum.photos/400/250?random=5" alt="Factory construction" class="w-full h-48 object-cover" loading="lazy">
+                            <div class="p-6">
+                                <h4 class="font-heading font-bold text-lg mb-2">Pabrik Tekstil Modern</h4>
+                                <p class="text-gray-600 mb-4">Konstruksi pabrik tekstil dengan area 5 hektar dan fasilitas lengkap</p>
+                                <div class="flex justify-between text-sm text-gray-500">
+                                    <span><i class="fas fa-calendar-alt mr-1"></i>2022</span>
+                                    <span><i class="fas fa-map-marker-alt mr-1"></i>Karawang</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center">
+                    <button onclick="openProjectConsultation()" class="bg-secondary hover:bg-red-700 text-white font-bold px-8 py-3 rounded-lg text-lg transition">
+                        <i class="fas fa-hard-hat mr-2"></i>Konsultasi Proyek
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-16 bg-light">
+            <div class="container mx-auto px-4">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h2 class="font-heading font-bold text-3xl md:text-4xl text-dark mb-6">Tentang PT Berkah Baja Steel</h2>
+                        <p class="text-gray-600 mb-6">Didirikan pada tahun 1990, PT Berkah Baja Steel telah tumbuh menjadi perusahaan terkemuka di bidang material konstruksi dan jasa kontraktor. Dengan pengalaman lebih dari 30 tahun, kami berkomitmen untuk menyediakan solusi konstruksi terbaik bagi klien kami.</p>
+                        
+                        <div class="grid grid-cols-2 gap-6 mb-8">
+                            <div class="bg-white p-4 rounded-lg text-center">
+                                <div class="text-3xl font-bold text-primary mb-2">30+</div>
+                                <div class="text-gray-600">Tahun Pengalaman</div>
+                            </div>
+                            <div class="bg-white p-4 rounded-lg text-center">
+                                <div class="text-3xl font-bold text-primary mb-2">500+</div>
+                                <div class="text-gray-600">Proyek Selesai</div>
+                            </div>
+                            <div class="bg-white p-4 rounded-lg text-center">
+                                <div class="text-3xl font-bold text-primary mb-2">50+</div>
+                                <div class="text-gray-600">Klien Aktif</div>
+                            </div>
+                            <div class="bg-white p-4 rounded-lg text-center">
+                                <div class="text-3xl font-bold text-primary mb-2">100+</div>
+                                <div class="text-gray-600">Tim Profesional</div>
+                            </div>
+                        </div>
+
+                        <div class="flex space-x-4">
+                            <button onclick="openAboutPage()" class="bg-primary hover:bg-blue-700 text-white font-bold px-6 py-3 rounded-lg transition">
+                                <i class="fas fa-book-open mr-2"></i>Selengkapnya
+                            </button>
+                            <button onclick="openBrochure()" class="border border-primary text-primary hover:bg-primary hover:text-white font-bold px-6 py-3 rounded-lg transition">
+                                <i class="fas fa-download mr-2"></i>Download Brosur
+                            </button>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="https://picsum.photos/600/400?random=6" alt="PT Berkah Baja Steel office and team" class="rounded-lg shadow-lg" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h2 class="font-heading font-bold text-3xl md:text-4xl text-dark mb-4">Hubungi Kami</h2>
+                    <p class="text-gray-600 max-w-2xl mx-auto">Kami siap membantu kebutuhan material konstruksi dan jasa kontraktor Anda</p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                    <!-- Contact Info -->
+                    <div>
+                        <div class="bg-light p-8 rounded-lg mb-8">
+                            <h3 class="font-heading font-bold text-2xl mb-6">Informasi Kontak</h3>
+                            
+                            <div class="space-y-6">
+                                <div class="flex items-start">
+                                    <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mr-4">
+                                        <i class="fas fa-map-marker-alt text-white text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-dark mb-1">Alamat Kantor</h4>
+                                        <p class="text-gray-600">Jl. Link Keranggot Kota Cilegon Provinsi Banten<br>Kawasan Industri Modern<br>Jakarta Barat 11730</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start">
+                                    <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mr-4">
+                                        <i class="fas fa-phone-alt text-white text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-dark mb-1">Telepon</h4>
+                                        <p class="text-gray-600">+62 8966 930 9914 (Office)<br>+62 8966 9309 914 (WhatsApp)</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start">
+                                    <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mr-4">
+                                        <i class="fas fa-envelope text-white text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-dark mb-1">Email</h4>
+                                        <p class="text-gray-600">info@berkahbajasteel.co.id<br>sales@berkahbajasteel.co.id</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start">
+                                    <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mr-4">
+                                        <i class="fas fa-clock text-white text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-dark mb-1">Jam Operasional</h4>
+                                        <p class="text-gray-600">Senin - Jumat: 08:00 - 22:00<br>Sabtu & Minggu: 09:00 - 21:00<br> Hari Libur: Tutup</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Map Placeholder -->
+                        <div class="bg-gray-200 rounded-lg h-64 flex items-center justify-center">
+                            <div class="text-center">
+                                <i class="fas fa-map-marked-alt text-4xl text-gray-400 mb-4"></i>
+                                <p class="text-gray-600">Peta Lokasi Kantor</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="bg-light p-8 rounded-lg">
+                        <h3 class="font-heading font-bold text-2xl mb-6">Kirim Pesan</h3>
+                        <form id="contactForm" onsubmit="submitContactForm(event)">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                                <div>
+                                    <label class="block text-gray-700 mb-2" for="name">Nama Lengkap *</label>
+                                    <input type="text" id="name" name="name" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 transition">
+                                </div>
+                                <div>
+                                    <label class="block text-gray-700 mb-2" for="phone">Nomor Telepon *</label>
+                                    <input type="tel" id="phone" name="phone" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 transition">
+                                </div>
+                            </div>
+                            
+                            <div class="mb-4">
+                                <label class="block text-gray-700 mb-2" for="email">Email *</label>
+                                <input type="email" id="email" name="email" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 transition">
+                            </div>
+                            
+                            <div class="mb-4">
+                                <label class="block text-gray-700 mb-2" for="subject">Subjek *</label>
+                                <select id="subject" name="subject" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 transition">
+                                    <option value="">Pilih Subjek</option>
+                                    <option value="product">Informasi Produk</option>
+                                    <option value="distributor">Menjadi Distributor</option>
+                                    <option value="contractor">Jasa Kontraktor</option>
+                                    <option value="quotation">Permintaan Penawaran</option>
+                                    <option value="other">Lainnya</option>
+                                </select>
+                            </div>
+                            
+                            <div class="mb-6">
+                                <label class="block text-gray-700 mb-2" for="message">Pesan *</label>
+                                <textarea id="message" name="message" rows="5" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 transition"></textarea>
+                            </div>
+                            
+                            <button type="submit" class="w-full bg-primary hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition">
+                                <i class="fas fa-paper-plane mr-2"></i>Kirim Pesan
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter -->
+        <section class="py-12 bg-primary text-white">
+            <div class="container mx-auto px-4">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <h3 class="font-heading font-bold text-2xl mb-2">Berlangganan Newsletter</h3>
+                        <p>Dapatkan informasi terbaru tentang produk, promo, dan tips konstruksi dari kami.</p>
+                    </div>
+                    <div>
+                        <form onsubmit="subscribeNewsletter(event)" class="flex flex-col sm:flex-row gap-2">
+                            <input type="email" id="newsletterEmail" placeholder="Email Anda" required class="flex-grow px-4 py-3 rounded-lg text-gray-800 focus:outline-none focus:ring-2 focus:ring-white/20">
+                            <button type="submit" class="bg-secondary hover:bg-red-700 text-white font-bold px-6 py-3 rounded-lg transition">
+                                <i class="fas fa-paper-plane mr-2"></i>Berlangganan
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white">
+        <div class="container mx-auto px-4 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div>
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center mr-3">
+                            <span class="text-white font-heading font-bold">BBS</span>
+                        </div>
+                        <div>
+                            <h3 class="font-heading font-bold text-lg">PT Berkah Baja Steel</h3>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-4">Penyedia solusi lengkap material konstruksi dan jasa kontraktor profesional sejak 1990.</p>
+                    <div class="flex space-x-3">
+                        <a href="#" class="w-10 h-10 bg-gray-800 hover:bg-primary rounded-full flex items-center justify-center transition">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 hover:bg-primary rounded-full flex items-center justify-center transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 hover:bg-primary rounded-full flex items-center justify-center transition">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 hover:bg-primary rounded-full flex items-center justify-center transition">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-heading font-bold text-lg mb-4">Tautan Cepat</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-300 hover:text-white transition">Beranda</a></li>
+                        <li><a href="#products" class="text-gray-300 hover:text-white transition">Produk</a></li>
+                        <li><a href="#distributor" class="text-gray-300 hover:text-white transition">Distributor</a></li>
+                        <li><a href="#contractor" class="text-gray-300 hover:text-white transition">Kontraktor</a></li>
+                        <li><a href="#about" class="text-gray-300 hover:text-white transition">Tentang Kami</a></li>
+                        <li><a href="#contact" class="text-gray-300 hover:text-white transition">Kontak</a></li>
+                    </ul>
+                </div>
+
+                <!-- Products -->
+                <div>
+                    <h4 class="font-heading font-bold text-lg mb-4">Produk</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-300 hover:text-white transition">Baja & Besi</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition">Semen & Cat</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition">Alat Konstruksi</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition">Material Lainnya</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition">Katalog Produk</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition">Harga & Promo</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="font-heading font-bold text-lg mb-4">Kontak</h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-primary mr-3 mt-1"></i>
+                            <span class="text-gray-300">Jl. Link Keranggot Kecamatan Jombang Kota Cilegon Provinsi Banten</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-phone-alt text-primary mr-3 mt-1"></i>
+                            <span class="text-gray-300">+62 8 966 930 9914</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-envelope text-primary mr-3 mt-1"></i>
+                            <span class="text-gray-300">info@berkahbajasteel.co.id</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-clock text-primary mr-3 mt-1"></i>
+                            <span class="text-gray-300">Senin - Minggu: 08:00 - 22:00</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 mt-8 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-400 text-center md:text-left mb-4 md:mb-0">&copy; 2024 PT Berkah Baja Steel. Semua Hak Dilindungi.</p>
+                    <div class="flex space-x-6">
+                        <a href="#" class="text-gray-400 hover:text-white transition">Syarat & Ketentuan</a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">Kebijakan Privasi</a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">Sitemap</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <!-- Quote Modal -->
+    <div id="quoteModal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden items-center justify-center p-4">
+        <div class="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+            <div class="p-6">
+                <div class="flex justify-between items-center mb-6">
+                    <h3 class="font-heading font-bold text-2xl">Request Quote</h3>
+                    <button onclick="closeQuoteModal()" class="text-gray-500 hover:text-gray-700 text-2xl">&times;</button>
+                </div>
+                <form id="quoteForm" onsubmit="submitQuoteForm(event)">
+                    <div class="space-y-4">
+                        <div>
+                            <label class="block text-gray-700 mb-2">Jenis Layanan</label>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <label class="flex items-center p-4 border rounded-lg cursor-pointer hover:bg-gray-50">
+                                    <input type="radio" name="serviceType" value="material" class="mr-3" checked>
+                                    <div>
+                                        <div class="font-medium">Material Konstruksi</div>
+                                        <div class="text-sm text-gray-600">Permintaan harga material</div>
+                                    </div>
+                                </label>
+                                <label class="flex items-center p-4 border rounded-lg cursor-pointer hover:bg-gray-50">
+                                    <input type="radio" name="serviceType" value="contractor" class="mr-3">
+                                    <div>
+                                        <div class="font-medium">Jasa Kontraktor</div>
+                                        <div class="text-sm text-gray-600">Konsultasi proyek konstruksi</div>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-gray-700 mb-2">Nama Lengkap *</label>
+                                <input type="text" required class="w-full px-4 py-2 rounded-lg border">
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 mb-2">Perusahaan</label>
+                                <input type="text" class="w-full px-4 py-2 rounded-lg border">
+                            </div>
+                        </div>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-gray-700 mb-2">Email *</label>
+                                <input type="email" required class="w-full px-4 py-2 rounded-lg border">
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 mb-2">Telepon *</label>
+                                <input type="tel" required class="w-full px-4 py-2 rounded-lg border">
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label class="block text-gray-700 mb-2">Detail Permintaan *</label>
+                            <textarea rows="4" required class="w-full px-4 py-2 rounded-lg border"></textarea>
+                        </div>
+                        
+                        <div>
+                            <label class="block text-gray-700 mb-2">Berkas Pendukung (Opsional)</label>
+                            <input type="file" class="w-full px-4 py-2 rounded-lg border">
+                        </div>
+                    </div>
+                    
+                    <div class="mt-6 flex justify-end space-x-3">
+                        <button type="button" onclick="closeQuoteModal()" class="px-6 py-2 border rounded-lg hover:bg-gray-50">Batal</button>
+                        <button type="submit" class="bg-primary hover:bg-blue-700 text-white px-6 py-2 rounded-lg">Kirim Permintaan</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cart Modal -->
+    <div id="cartModal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden">
+        <div class="absolute right-0 top-0 h-full w-full md:w-96 bg-white shadow-lg">
+            <div class="p-6">
+                <div class="flex justify-between items-center mb-6">
+                    <h3 class="font-heading font-bold text-2xl">Keranjang Belanja</h3>
+                    <button onclick="closeCart()" class="text-gray-500 hover:text-gray-700 text-2xl">&times;</button>
+                </div>
+                <div id="cartItems" class="mb-6">
+                    <!-- Cart items will be populated here -->
+                    <div class="text-center py-8 text-gray-500">
+                        <i class="fas fa-shopping-cart text-4xl mb-4"></i>
+                        <p>Keranjang belanja Anda kosong</p>
+                    </div>
+                </div>
+                <div class="border-t pt-4">
+                    <div class="flex justify-between mb-4">
+                        <span class="font-bold">Total:</span>
+                        <span id="cartTotal" class="font-bold text-xl">Rp 0</span>
+                    </div>
+                    <button onclick="checkout()" class="w-full bg-primary hover:bg-blue-700 text-white py-3 rounded-lg font-bold">Checkout</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Order Confirmation Modal -->
+    <div id="orderModal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden items-center justify-center p-4">
+        <div class="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+            <div class="p-6">
+                <div class="flex justify-between items-center mb-6">
+                    <h3 class="font-heading font-bold text-2xl">Konfirmasi Pesanan</h3>
+                    <button onclick="closeOrderModal()" class="text-gray-500 hover:text-gray-700 text-2xl">&times;</button>
+                </div>
+
+                <div id="orderSummary" class="mb-6">
+                    <!-- Order details will be populated here -->
+                </div>
+
+                <div class="border-t pt-4">
+                    <div class="flex justify-between items-center mb-4">
+                        <span class="font-bold text-lg">Total Pembayaran:</span>
+                        <span id="orderTotal" class="font-bold text-xl text-primary">Rp 0</span>
+                    </div>
+
+                    <div class="bg-gray-50 p-4 rounded-lg mb-4">
+                        <h4 class="font-bold mb-2">Informasi Pengiriman</h4>
+                        <p class="text-sm text-gray-600">Tim kami akan menghubungi Anda dalam 1x24 jam untuk mengkonfirmasi alamat pengiriman dan detail pesanan.</p>
+                    </div>
+
+                    <div class="flex space-x-3">
+                        <button onclick="closeOrderModal()" class="flex-1 border border-gray-300 text-gray-700 py-3 rounded-lg hover:bg-gray-50 transition">Batal</button>
+                        <button onclick="confirmOrder()" class="flex-1 bg-primary hover:bg-blue-700 text-white py-3 rounded-lg font-bold transition">Konfirmasi Pesanan</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Success Modal -->
+    <div id="successModal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden items-center justify-center p-4">
+        <div class="bg-white rounded-lg max-w-md w-full p-6 text-center">
+            <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <i class="fas fa-check text-green-600 text-2xl"></i>
+            </div>
+            <h3 class="font-heading font-bold text-2xl mb-2">Berhasil!</h3>
+            <p id="successMessage" class="text-gray-600 mb-6">Pesan Anda telah berhasil dikirim.</p>
+            <button onclick="closeSuccessModal()" class="bg-primary hover:bg-blue-700 text-white px-6 py-2 rounded-lg">Tutup</button>
+        </div>
+    </div>
+
+    <script>
+        // Define data at the beginning
+        const products = [
+            {
+                "id": 1,
+                "name": "Besi Beton 8mm",
+                "category": "Baja & Besi",
+                "price": 85000,
+                "image": "https://picsum.photos/400/300?random=7",
+                "description": "Besi beton polos diameter 8mm, SNI, panjang 12m",
+                "stock": "Tersedia",
+                "unit": "batang"
+            },
+            {
+                "id": 2,
+                "name": "Semen Tiga Roda",
+                "category": "Semen & Cat",
+                "price": 45000,
+                "image": "https://picsum.photos/400/300?random=8",
+                "description": "Semen Portland Komposit 40kg, kualitas premium",
+                "stock": "Tersedia",
+                "unit": "sak"
+            },
+            {
+                "id": 3,
+                "name": "Cat Tembok Dulux",
+                "category": "Semen & Cat",
+                "price": 250000,
+                "image": "https://picsum.photos/400/300?random=9",
+                "description": "Cat tembok Dulux 5 liter, tahan lama, berbagai warna",
+                "stock": "Tersedia",
+                "unit": "kaleng"
+            },
+            {
+                "id": 4,
+                "name": "Baja Ringan 0.75mm",
+                "category": "Baja & Besi",
+                "price": 120000,
+                "image": "https://picsum.photos/400/300?random=10",
+                "description": "Baja ringan galvalum ketebalan 0.75mm, panjang 6m",
+                "stock": "Tersedia",
+                "unit": "batang"
+            },
+            {
+                "id": 5,
+                "name": "Pipa PVC 3\"",
+                "category": "Material Lainnya",
+                "price": 85000,
+                "image": "https://picsum.photos/400/300?random=11",
+                "description": "Pipa PVC AW 3 inch, panjang 4m, SNI",
+                "stock": "Tersedia",
+                "unit": "batang"
+            },
+            {
+                "id": 6,
+                "name": "Gerinda Tangan",
+                "category": "Alat Konstruksi",
+                "price": 450000,
+                "image": "https://picsum.photos/400/300?random=12",
+                "description": "Mesin gerinda tangan 4\", merek terkenal, garansi 1 tahun",
+                "stock": "Tersedia",
+                "unit": "unit"
+            }
+        ];
+
+        // Load cart from localStorage or initialize empty
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+        let cartCount = cart.reduce((total, item) => total + item.quantity, 0);
+
+        // Update cart display on page load
+        updateCartCount();
+
+        // Initialize page
+        document.addEventListener("DOMContentLoaded", function() {
+            renderFeaturedProducts();
+            setupEventListeners();
+            checkCookieConsent();
+            
+            // Smooth scrolling for anchor links
+            document.querySelectorAll("a[href^=\"#kontak\"]").forEach(anchor => {
+                anchor.addEventListener("click", function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute("href").substring(1);
+                    const targetElement = document.getElementById(targetId);
+                    if (targetElement) {
+                        targetElement.scrollIntoView({
+                            behavior: "smooth",
+                            block: "start"
+                        });
+                    }
+                });
+            });
+        });
+
+        function setupEventListeners() {
+            // Mobile menu toggle
+            const mobileMenuButton = document.getElementById("mobileMenuButton");
+            const mobileMenu = document.getElementById("mobileMenu");
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener("click", function() {
+                    mobileMenu.classList.toggle("hidden");
+                });
+            }
+            
+            // Close mobile menu when clicking outside
+            document.addEventListener("click", function(event) {
+                if (!mobileMenu.contains(event.target) && !mobileMenuButton.contains(event.target)) {
+                    mobileMenu.classList.add("hidden");
+                }
+            });
+        }
+
+        function renderFeaturedProducts() {
+            const container = document.querySelector("#products .grid");
+            if (!container) return;
+            
+            container.innerHTML = "";
+            
+            products.slice(0, 3).forEach(product => {
+                const productElement = document.createElement("div");
+                productElement.className = "bg-white rounded-lg overflow-hidden shadow-md card-hover";
+                productElement.innerHTML = `
+                    <img src="${product.image}" alt="${product.name}" class="w-full h-48 object-cover" loading="lazy">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h4 class="font-heading font-bold text-lg">${product.name}</h4>
+                            <span class="bg-primary text-white text-xs px-2 py-1 rounded">${product.category}</span>
+                        </div>
+                        <p class="text-gray-600 text-sm mb-4">${product.description}</p>
+                        <div class="flex justify-between items-center mb-4">
+                            <div>
+                                <div class="font-bold text-xl text-primary">Rp ${product.price.toLocaleString()}</div>
+                                <div class="text-sm text-gray-500">/${product.unit}</div>
+                            </div>
+                            <span class="text-sm ${product.stock === "Tersedia" ? "text-green-600" : "text-red-600"}">
+                                <i class="fas fa-circle mr-1"></i>${product.stock}
+                            </span>
+                        </div>
+                        <div class="flex space-x-2">
+                            <button onclick="addToCart(${product.id})" class="flex-1 bg-primary hover:bg-blue-700 text-white py-2 rounded-lg transition">
+                                <i class="fas fa-cart-plus mr-2"></i>Tambah
+                            </button>
+                            <button onclick="viewProductDetail(${product.id})" class="flex-1 border border-primary text-primary hover:bg-primary hover:text-white py-2 rounded-lg transition">
+                                <i class="fas fa-eye mr-2"></i>Detail
+                            </button>
+                        </div>
+                    </div>
+                `;
+                container.appendChild(productElement);
+            });
+        }
+
+        function addToCart(productId) {
+            const product = products.find(p => p.id === productId);
+            if (!product) return;
+
+            const existingItem = cart.find(item => item.id === productId);
+            if (existingItem) {
+                existingItem.quantity += 1;
+            } else {
+                cart.push({
+                    ...product,
+                    quantity: 1
+                });
+            }
+
+            cartCount++;
+            updateCartCount();
+            saveCartToStorage();
+            showNotification("Produk ditambahkan ke keranjang", "success");
+        }
+
+        function updateCartCount() {
+            const cartCountElement = document.getElementById("cartCount");
+            const mobileCartCountElement = document.getElementById("mobileCartCount");
+            
+            if (cartCountElement) cartCountElement.textContent = cartCount;
+            if (mobileCartCountElement) mobileCartCountElement.textContent = cartCount;
+        }
+
+        function openCart() {
+            const cartModal = document.getElementById("cartModal");
+            const cartItemsContainer = document.getElementById("cartItems");
+            
+            if (cart.length === 0) {
+                cartItemsContainer.innerHTML = `
+                    <div class="text-center py-8 text-gray-500">
+                        <i class="fas fa-shopping-cart text-4xl mb-4"></i>
+                        <p>Keranjang belanja Anda kosong</p>
+                    </div>
+                `;
+            } else {
+                cartItemsContainer.innerHTML = "";
+                let total = 0;
+                
+                cart.forEach(item => {
+                    const itemTotal = item.price * item.quantity;
+                    total += itemTotal;
+                    
+                    const itemElement = document.createElement("div");
+                    itemElement.className = "flex items-center border-b py-4";
+                    itemElement.innerHTML = `
+                        <img src="${item.image}" alt="${item.name}" class="w-16 h-16 object-cover rounded mr-4">
+                        <div class="flex-grow">
+                            <h4 class="font-bold">${item.name}</h4>
+                            <p class="text-sm text-gray-600">Rp ${item.price.toLocaleString()}/${item.unit}</p>
+                        </div>
+                        <div class="flex items-center">
+                            <button onclick="updateCartQuantity(${item.id}, -1)" class="w-8 h-8 flex items-center justify-center border rounded-l">-</button>
+                            <span class="w-12 text-center border-t border-b">${item.quantity}</span>
+                            <button onclick="updateCartQuantity(${item.id}, 1)" class="w-8 h-8 flex items-center justify-center border rounded-r">+</button>
+                        </div>
+                        <div class="ml-4 text-right">
+                            <div class="font-bold">Rp ${itemTotal.toLocaleString()}</div>
+                            <button onclick="removeFromCart(${item.id})" class="text-red-600 text-sm mt-1">
+                                <i class="fas fa-trash"></i>
+                            </button>
+                        </div>
+                    `;
+                    cartItemsContainer.appendChild(itemElement);
+                });
+                
+                document.getElementById("cartTotal").textContent = "Rp " + total.toLocaleString();
+            }
+            
+            cartModal.classList.remove("hidden");
+        }
+
+        function closeCart() {
+            document.getElementById("cartModal").classList.add("hidden");
+        }
+
+        function updateCartQuantity(productId, change) {
+            const itemIndex = cart.findIndex(item => item.id === productId);
+            if (itemIndex === -1) return;
+
+            cart[itemIndex].quantity += change;
+
+            if (cart[itemIndex].quantity <= 0) {
+                cart.splice(itemIndex, 1);
+                cartCount--;
+            } else {
+                if (change > 0) cartCount++;
+                else cartCount--;
+            }
+
+            updateCartCount();
+            saveCartToStorage();
+            openCart(); // Refresh cart view
+        }
+
+        function removeFromCart(productId) {
+            const itemIndex = cart.findIndex(item => item.id === productId);
+            if (itemIndex === -1) return;
+
+            cartCount -= cart[itemIndex].quantity;
+            cart.splice(itemIndex, 1);
+
+            updateCartCount();
+            saveCartToStorage();
+            openCart(); // Refresh cart view
+            showNotification("Produk dihapus dari keranjang", "info");
+        }
+
+        function checkout() {
+            if (cart.length === 0) {
+                showNotification("Keranjang belanja kosong", "error");
+                return;
+            }
+
+            showOrderModal();
+            closeCart();
+        }
+
+        function openQuoteModal() {
+            document.getElementById("quoteModal").classList.remove("hidden");
+        }
+
+        function closeQuoteModal() {
+            document.getElementById("quoteModal").classList.add("hidden");
+        }
+
+        function submitQuoteForm(event) {
+            event.preventDefault();
+            closeQuoteModal();
+            showSuccessModal("Permintaan penawaran berhasil dikirim. Tim kami akan menghubungi Anda dalam 1x24 jam.");
+        }
+
+        function openDistributorForm() {
+            openQuoteModal();
+            // Set default service type to distributor
+            document.querySelector("input[name='serviceType'][value='material']").checked = true;
+            document.querySelector("textarea").placeholder = "Mohon jelaskan kebutuhan distribusi Anda...";
+        }
+
+        function openProjectConsultation() {
+            openQuoteModal();
+            // Set default service type to contractor
+            document.querySelector("input[name='serviceType'][value='contractor']").checked = true;
+            document.querySelector("textarea").placeholder = "Mohon jelaskan detail proyek konstruksi Anda...";
+        }
+
+        function submitContactForm(event) {
+            event.preventDefault();
+            showSuccessModal("Pesan Anda berhasil dikirim. Kami akan membalas dalam waktu 1x24 jam.");
+            document.getElementById("contactForm").reset();
+        }
+
+        function subscribeNewsletter(event) {
+            event.preventDefault();
+            const email = document.getElementById("newsletterEmail").value;
+            if (email) {
+                showSuccessModal("Terima kasih telah berlangganan newsletter kami!");
+                document.getElementById("newsletterEmail").value = "";
+            }
+        }
+
+        function showSuccessModal(message) {
+            document.getElementById("successMessage").textContent = message;
+            document.getElementById("successModal").classList.remove("hidden");
+        }
+
+        function closeSuccessModal() {
+            document.getElementById("successModal").classList.add("hidden");
+        }
+
+        function showOrderModal() {
+            const orderModal = document.getElementById("orderModal");
+            const orderSummary = document.getElementById("orderSummary");
+            const orderTotal = document.getElementById("orderTotal");
+
+            orderSummary.innerHTML = "";
+            let total = 0;
+
+            cart.forEach((item, index) => {
+                const itemTotal = item.price * item.quantity;
+                total += itemTotal;
+
+                const itemElement = document.createElement("div");
+                itemElement.className = "flex items-center border-b border-gray-200 py-4 last:border-b-0";
+                itemElement.innerHTML = `
+                    <img src="${item.image}" alt="${item.name}" class="w-16 h-16 object-cover rounded mr-4">
+                    <div class="flex-grow">
+                        <h4 class="font-bold text-lg">${item.name}</h4>
+                        <p class="text-gray-600">Rp ${item.price.toLocaleString()}/${item.unit}</p>
+                        <p class="text-sm text-gray-500">Jumlah: ${item.quantity}</p>
+                    </div>
+                    <div class="text-right">
+                        <div class="font-bold text-lg text-primary">Rp ${itemTotal.toLocaleString()}</div>
+                    </div>
+                `;
+                orderSummary.appendChild(itemElement);
+            });
+
+            orderTotal.textContent = "Rp " + total.toLocaleString();
+            orderModal.classList.remove("hidden");
+        }
+
+        function closeOrderModal() {
+            document.getElementById("orderModal").classList.add("hidden");
+        }
+
+        function confirmOrder() {
+            // Generate order number
+            const orderNumber = "ORD-" + Date.now();
+
+            // Show success message with order number
+            showSuccessModal(`Pesanan Anda telah berhasil dibuat dengan nomor ${orderNumber}. Tim kami akan menghubungi Anda dalam 1x24 jam untuk konfirmasi.`);
+
+            // Clear cart
+            cart.length = 0;
+            cartCount = 0;
+            updateCartCount();
+            saveCartToStorage();
+
+            // Close order modal
+            closeOrderModal();
+        }
+
+        function saveCartToStorage() {
+            localStorage.setItem('cart', JSON.stringify(cart));
+        }
+
+        function viewAllProducts() {
+            scrollToSection("products");
+            showNotification("Memuat semua produk...", "info");
+        }
+
+        function viewProductDetail(productId) {
+            const product = products.find(p => p.id === productId);
+            if (product) {
+                alert(`Detail Produk:\n\nNama: ${product.name}\nKategori: ${product.category}\nHarga: Rp ${product.price.toLocaleString()}/${product.unit}\nDeskripsi: ${product.description}\nStok: ${product.stock}`);
+            }
+        }
+
+        function openAboutPage() {
+            alert("Halaman tentang perusahaan sedang dalam pengembangan.");
+        }
+
+        function openBrochure() {
+            alert("Brosur perusahaan sedang diunduh...");
+        }
+
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            if (section) {
+                section.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start"
+                });
+            }
+        }
+
+        function showNotification(message, type) {
+            // Create notification element
+            const notification = document.createElement("div");
+            notification.className = `fixed top-4 right-4 z-50 px-6 py-4 rounded-lg shadow-lg transition-transform transform translate-x-full ${type === "success" ? "bg-green-100 text-green-800 border border-green-200" : type === "error" ? "bg-red-100 text-red-800 border border-red-200" : "bg-blue-100 text-blue-800 border border-blue-200"}`;
+            notification.innerHTML = `
+                <div class="flex items-center">
+                    <i class="fas ${type === "success" ? "fa-check-circle" : type === "error" ? "fa-exclamation-circle" : "fa-info-circle"} mr-3"></i>
+                    <span>${message}</span>
+                </div>
+            `;
+            
+            document.body.appendChild(notification);
+            
+            // Animate in
+            setTimeout(() => {
+                notification.classList.remove("translate-x-full");
+                notification.classList.add("translate-x-0");
+            }, 10);
+            
+            // Remove after 3 seconds
+            setTimeout(() => {
+                notification.classList.remove("translate-x-0");
+                notification.classList.add("translate-x-full");
+                setTimeout(() => {
+                    document.body.removeChild(notification);
+                }, 300);
+            }, 3000);
+        }
+
+        function checkCookieConsent() {
+            const consent = localStorage.getItem("cookieConsent");
+            if (!consent) {
+                setTimeout(() => {
+                    document.getElementById("cookieConsent").classList.remove("hidden");
+                }, 1000);
+            }
+        }
+
+        function acceptCookies() {
+            localStorage.setItem("cookieConsent", "accepted");
+            document.getElementById("cookieConsent").classList.add("hidden");
+        }
+
+        function declineCookies() {
+            localStorage.setItem("cookieConsent", "declined");
+            document.getElementById("cookieConsent").classList.add("hidden");
+        }
+
+       function closeQuoteModal() {
+    const modal = document.getElementById("quoteModal");
+    if (modal) {
+        modal.style.display = "none";
+        document.body.style.overflow = "auto"; // Mengaktifkan kembali scroll halaman utama
+    }
+}
+
+function closeCart() {
+    const cart = document.getElementById("cartModal");
+    if (cart) {
+        cart.style.display = "none";
+        document.body.style.overflow = "auto";
+    }
+}
+       // Menangani klik di luar area modal untuk menutupnya
+document.addEventListener("click", function(event) {
+    const successModal = document.getElementById("successModal");
+
+    // 1. Pastikan successModal ada di halaman
+    // 2. Pastikan modal sedang tampil (display bukan 'none')
+    if (successModal && successModal.style.display !== "none") {
+        const modalContent = successModal.querySelector(".bg-white");
+
+        // Jika yang diklik adalah background (BUKAN bagian putih/konten)
+        if (modalContent && !modalContent.contains(event.target)) {
+            // Cek apakah fungsi closeSuccessModal tersedia sebelum dipanggil
+            if (typeof closeSuccessModal === "function") {
+                closeSuccessModal();
+            } else {
+                // Alternatif jika fungsi belum dibuat
+                successModal.style.display = "none";
+                document.body.style.overflow = "auto";
+            }
+        }
+    }
+}); // Kurung penutup untuk addEventListener
+
+        // Close modals with Escape key
+        document.addEventListener("keydown", function(event) {
+            if (event.key === "Escape") {
+                closeQuoteModal();
+                closeCart();
+                closeOrderModal();
+                closeSuccessModal();
+            }
+        });
+    </script>
+</body>
+</html>
